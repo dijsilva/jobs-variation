@@ -1,0 +1,26 @@
+<!DOCTYPE html />
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+        <title>Variação de vagas</title>
+
+    <head>
+        <body>
+            <div class="container">
+                <div class="apresentation">
+                    <h1>Variação no número de vagas publicadas em função do tempo (em semanas)</h1>
+                    <div class="p-apresentation">
+                        <p>Visualização do número de vagas ao longo das útlimas semanas usando como base informações contidas nas plataformas do LinkedIn e Catho em algumas cidades brasileiras.</p>
+                        <p></p>
+                    </div>
+                {% include "graph/graphics.njk" %}
+                </div>
+            </div>
+        <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+        <script src="scripts.js" />
+</script>
+</html>

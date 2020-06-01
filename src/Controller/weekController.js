@@ -8,7 +8,7 @@ module.exports = {
         return res.status(200).json(all)
     },
     async create(req, res){
-        const { week } = req.query
+        const { week } = req.params
         const query = await jobsSchema.find({'week_date': week})
         const check = await weeksSchema.findOne({'week': week})
 
@@ -30,7 +30,7 @@ module.exports = {
     async show(req, res){
 
         const { week } = req.params
-        const result = await weeksSchema.find({week: week})
+        const result = await weeksSchema.findOne({week: week}).populate('languages')
         if (!result){
             return res.status(404).json({message: 'Data not found for this week.'})    
         }
