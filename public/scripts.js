@@ -1,11 +1,29 @@
 var selected = 'LINKEDIN'
 var graphics = {}
 var graphics_line = {}
+
+
+function handleColorButton(){
+    const buttons = document.querySelectorAll("button.buttonSelect")
+
+    buttons.forEach(button => {
+        if (button.value == selected){
+            button.style.opacity = 1
+        }else {
+            button.style.opacity = 0.5
+        }
+    })
+}
+
+
+
 renderGraphics()
 
 function renderGraphics(){
     var data = JSON.parse(document.getElementById("value_from_server").value)
     var last_week = data.weeks
+
+    handleColorButton()
 
     var ctx = document.querySelectorAll('canvas.myChart');
 
