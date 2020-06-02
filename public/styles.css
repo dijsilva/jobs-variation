@@ -97,4 +97,8 @@ body {
     .container .apresentation {
         max-width: 100%;
     }
+
+    .container .apresentation .p-apresentation {
+        max-width: 90%;
+    }
 }
