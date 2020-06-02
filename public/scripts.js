@@ -126,7 +126,7 @@ for (let indexGraphic = 0; indexGraphic < ctx_line.length; indexGraphic++){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Variação'
+                        labelString: 'Data'
                       }
                 }]
                 },
