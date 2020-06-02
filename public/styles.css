@@ -52,11 +52,11 @@ body {
     transition: opacity 200ms linear;
 }
 
-.p-apresentation .buttons button:hover {
-    opacity: 1;
+.p-apresentation a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
 }
-
-
 .p-apresentation .buttons button::-moz-focus-inner {
     border: 0;
 }
@@ -74,14 +74,14 @@ body {
 .container .apresentation h1 {
     text-align: center;
     font-size: 26px;
-    margin: 30px 0 5px 0;
+    margin: 30px 0 20px 0;
     color: #333;
 }
 
 .container .apresentation p {
     font-size: 16px;
     text-align: center;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .graphics-container {
