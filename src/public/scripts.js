@@ -62,14 +62,16 @@ const variation = data.variation.LINKEDIN
 
 for (let indexGraphic = 0; indexGraphic < ctx_line.length; indexGraphic++){
     const state = ctx_line[indexGraphic].getAttribute("state")
+    console.log(variation[state].Python.jobs)
     var myLineChart = new Chart(ctx_line[indexGraphic], {
         type: 'line',
-        labels: ['22-05', '01-06'],
         data: {
+            labels: ["22-05", "01-06"],
             datasets: [{
                 label: 'Python',
                 backgroundColor: "transparent",
                 borderColor: "#373737",
+                labels: ["22-05", "01-06"],
                 data: variation[state].Python.jobs,
             },
             {

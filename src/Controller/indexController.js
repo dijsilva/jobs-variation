@@ -5,7 +5,7 @@ module.exports = {
     async index(req, res){
         const weeks = await weeksSchema.find()
         .populate('languages', '-_id -createdAt -updatedAt -week_date')
-        .sort({'week': -1})      
+        .sort({'week': 1})      
 
         const LINKEDIN = {
             BSB: {
@@ -114,8 +114,9 @@ module.exports = {
                 }
             })
         })
+
         const data = {
-            weeks: weeks[0],
+            weeks: weeks[weeks.length - 1],
             variation: {
                 LINKEDIN: LINKEDIN
             }
