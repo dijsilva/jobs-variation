@@ -89,6 +89,88 @@ module.exports = {
                 }
             }
         }
+        const CATHO = {
+            BSB: {
+                Python: {
+                    jobs: []
+                },
+                Java: {
+                    jobs: []
+                },
+                Javascript: {
+                    jobs: []
+                },
+                C: {
+                    jobs: []
+                },
+                C_plusplus: {
+                    jobs: []
+                },
+                C_sharp: {
+                    jobs: []
+                }
+            },
+            SP: {
+                Python: {
+                    jobs: []
+                },
+                Java: {
+                    jobs: []
+                },
+                Javascript: {
+                    jobs: []
+                },
+                C: {
+                    jobs: []
+                },
+                C_plusplus: {
+                    jobs: []
+                },
+                C_sharp: {
+                    jobs: []
+                }
+            },
+            MG: {
+                Python: {
+                    jobs: []
+                },
+                Java: {
+                    jobs: []
+                },
+                Javascript: {
+                    jobs: []
+                },
+                C: {
+                    jobs: []
+                },
+                C_plusplus: {
+                    jobs: []
+                },
+                C_sharp: {
+                    jobs: []
+                }
+            },
+            SC: {
+                Python: {
+                    jobs: []
+                },
+                Java: {
+                    jobs: []
+                },
+                Javascript: {
+                    jobs: []
+                },
+                C: {
+                    jobs: []
+                },
+                C_plusplus: {
+                    jobs: []
+                },
+                C_sharp: {
+                    jobs: []
+                }
+            }
+        }
 
         weeks.map(week => {
             week.languages.map(record => {
@@ -112,13 +194,34 @@ module.exports = {
                         LINKEDIN[record.state].C_sharp.jobs.push(record.jobs)
                     }
                 }
+                if (record.source_site == 'CATHO'){
+                    if (record.language == 'Python'){
+                        CATHO[record.state].Python.jobs.push(record.jobs)
+                    }
+                    if (record.language == 'Java'){
+                        CATHO[record.state].Java.jobs.push(record.jobs)
+                    }
+                    if (record.language == 'Javascript'){
+                        CATHO[record.state].Javascript.jobs.push(record.jobs)
+                    }
+                    if (record.language == 'C'){
+                        CATHO[record.state].C.jobs.push(record.jobs)
+                    }
+                    if (record.language == 'C_plusPlus'){
+                        CATHO[record.state].C_plusplus.jobs.push(record.jobs)
+                    }
+                    if (record.language == 'C_sharp'){
+                        CATHO[record.state].C_sharp.jobs.push(record.jobs)
+                    }
+                }
             })
         })
 
         const data = {
             weeks: weeks[weeks.length - 1],
             variation: {
-                LINKEDIN: LINKEDIN
+                LINKEDIN: LINKEDIN,
+                CATHO: CATHO
             }
         }
         

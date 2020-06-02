@@ -33,6 +33,44 @@ body {
     max-width: 70%;
 }
 
+.container .apresentation .p-apresentation .buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.p-apresentation .buttons button {
+    min-width: 120px;
+    margin: 10px;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    opacity: 0.6;
+    transition: opacity 200ms linear;
+}
+
+.p-apresentation .buttons button:hover {
+    opacity: 1;
+}
+
+
+.p-apresentation .buttons button::-moz-focus-inner {
+    border: 0;
+}
+
+#linkedinButton {
+    background-color: #0077B5;
+    color: white;
+}
+
+#catho {
+    color: #0023A0;
+    background-color: #F61590;
+}
+
 .container .apresentation h1 {
     text-align: center;
     font-size: 26px;

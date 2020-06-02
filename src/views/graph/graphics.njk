@@ -1,47 +1,47 @@
 <div class="graphics-container">
     <input type='hidden' id="value_from_server" value={{all}} />
-        <h2>Variação no número de vagas</h2>
-    <div class="all_jobs">
-        <div class="graphic-div">
-            <h3>Variação em Brasília</h3>
-            <canvas id="myChart-line" width="90%" height="50%" state="BSB"></canvas>
-        </div>
-
-        <div class="graphic-div">
-            <h3>Variação em São Paulo</h3>
-            <canvas id="myChart-line" width="90%" height="50%" state="SP"></canvas>
-        </div>
-
-        <div class="graphic-div">
-            <h3>Variação em Belo Horizonte</h3>
-            <canvas id="myChart-line" width="90%" height="50%" state="MG"></canvas>
-        </div>
-
-        <div class="graphic-div">
-            <h3>Variação em Florianópolis</h3>
-            <canvas id="myChart-line" width="90%" height="50%" state="SC"></canvas>
-        </div>
-    </div>
     <h2>Quantidade de vagas nessa semana</h2>
     <div class="all_jobs">
         <div class="graphic-div">
             <h3>Vagas em Brasília</h3>
-            <canvas id="myChart" width="100%" height="50%" state="BSB"></canvas>
+            <canvas id="actualBSB" name="BSB" class="myChart" width="100%" height="50%" state="BSB"></canvas>
         </div>
 
         <div class="graphic-div">
             <h3>Vagas em São Paulo</h3>
-            <canvas id="myChart" width="100%" height="50%"  state="SP"></canvas>
+            <canvas id="actualSP" name="SP" class="myChart" width="100%" height="50%"  state="SP"></canvas>
         </div>
 
         <div class="graphic-div">
             <h3>Vagas em Belo Horizonte</h3>
-            <canvas id="myChart" width="100%" height="50%"  state="MG"></canvas>
+            <canvas id="actualMG" name="MG" class="myChart" width="100%" height="50%"  state="MG"></canvas>
         </div>
 
         <div class="graphic-div">
             <h3>Vagas em Florianópolis</h3>
-            <canvas id="myChart" width="100%" height="50%"  state="SC"></canvas>
+            <canvas id="actualSC" name="SC" class="myChart" width="100%" height="50%"  state="SC"></canvas>
+        </div>
+    </div>
+    <h2>Variação no número de vagas</h2>
+    <div class="all_jobs">
+        <div class="graphic-div">
+            <h3>Variação em Brasília</h3>
+            <canvas id="lineBSB" name="BSB" class="myChart-line" width="90%" height="50%" state="BSB"></canvas>
+        </div>
+
+        <div class="graphic-div">
+            <h3>Variação em São Paulo</h3>
+            <canvas id="lineSP" name="SP" class="myChart-line" width="90%" height="50%" state="SP"></canvas>
+        </div>
+
+        <div class="graphic-div">
+            <h3>Variação em Belo Horizonte</h3>
+            <canvas id="lineMG" name="MG" class="myChart-line" width="90%" height="50%" state="MG"></canvas>
+        </div>
+
+        <div class="graphic-div">
+            <h3>Variação em Florianópolis</h3>
+            <canvas id="lineSC" name="SC" class="myChart-line" width="90%" height="50%" state="SC"></canvas>
         </div>
     </div>
 </div>
