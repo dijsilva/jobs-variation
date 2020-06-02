@@ -53,7 +53,7 @@ body {
     justify-content: center;
 }
 .all_jobs {
-    width: 95%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -86,7 +86,14 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .graphic-div {
+        margin: 15px 10px 10px 0;
+    }
+
     .graphics-container {
         align-items: center;
+    }
+    .container .apresentation {
+        max-width: 100%;
     }
 }
