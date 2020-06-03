@@ -111,6 +111,16 @@ body {
     font-size: 20px;
 }
 
+.span-div {
+    width: 100%;
+    padding-left: 50px;
+
+}
+.graphic-div span {
+    font-size: 10px;
+    color: #444;
+}
+
 .graphics-container h2 {
     text-align: center;
     font-size: 22px;
