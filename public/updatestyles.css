@@ -1,0 +1,91 @@
+.update-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.update-content {
+    display: flex;
+    padding: 0 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update-content h1 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 20px 0;
+    color: #333;
+}
+
+.parargraph-apresentation {
+    width: 100%;
+}
+
+.parargraph-apresentation p {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content {
+    width: 80%;
+    margin: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+
+
+.div-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.state {
+    margin: 20px 0;
+}
+
+.buttonLoad {
+    padding: 10px 15px;
+    background-color: #3cf269;
+    border: 0;
+    border-radius: 4px;
+    color: #222;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 100ms linear;
+}
+.buttonLoad:hover {
+    opacity: 1;
+}
+
+.buttonLoad::-moz-focus-inner {
+    border: 0;
+}
+
+.div-catho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divInputs {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputJobs {
+    margin: 1px 0;
+    width: 60px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html />
+<html>
+        {% include "_partials/head.njk" %}
+        <body>
+            <div class="update-container">
+                <div class="update-content">
+                    <h1>Atualize os dados</h1>
+                    <div class="parargraph-apresentation">
+                        <p>Clique no botão para que o crawler busque os dados no LinkedIn e no CATHO</p>
+                    </div>
+                </div>
+
+                <input type='hidden' id="value_from_server" value={{information}} />
+                <div class="content">
+                    <div class="div-linkedin">
+                            <p class="state">Brasília - DF</p>
+                            <button class="buttonLoad" id="button_BSB" onclick="getData(this)">Carregar dados</button>
+                            <ul>
+                                {% for linguagem in information.BSB %}
+                                    <li class="divInputs">
+                                        <p>{{linguagem.name}}</p>
+                                        <input class="inputJobs" type="number" value={{linguagem.jobs}} />    
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="div-catho">
+                        <button>Atualizar</button>
+                       
+                    </div>
+                </div>
+            </div>
+        </body>
+        <script type="text/javascript" src="updateScripts.js"> </script>
+</html>
