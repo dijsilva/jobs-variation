@@ -27,6 +27,7 @@ module.exports = {
         for (language in languages[source]){
             const base_url = getUrl(source, state, languages[source][language])
             const result = await crawler(base_url, source)
+            console.log(language, result)
             await JobsSchema.create({
                 language: language,
                 week_date: week,
