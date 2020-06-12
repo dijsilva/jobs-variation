@@ -34,6 +34,7 @@ module.exports = {
         if (!result){
             return res.status(404).json({message: 'Data not found for this week.'})    
         }
+        console.log(result.languages.length)
 
         return res.status(200).json(result)
     }
