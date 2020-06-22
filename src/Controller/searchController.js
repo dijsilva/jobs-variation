@@ -27,15 +27,21 @@ module.exports = {
         for (language in languages[source]){
             const base_url = getUrl(source, state, languages[source][language])
             const result = await crawler(base_url, source)
-            await JobsSchema.create({
-                language: language,
-                week_date: week,
-                source_site: source,
-                state: state,
-                jobs: result
-            })
-        }
 
+            const query = await JobsSchema.findOne({'week_date': week, 'language': language, 'source_site': source, 'state': state})
+
+            if (!query && result > 0){
+                await JobsSchema.create({
+                    language: language,
+                    week_date: week,
+                    source_site: source,
+                    state: state,
+                    jobs: result
+                })
+            } else {
+                console.log('Já criado: ', language, result)
+            }
+        }
         return res.status(201).json({message: 'Ok'})
     }
 }
