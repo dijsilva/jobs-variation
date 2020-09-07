@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Container, Title, ShortDescription, Content, Buttons, Button } from './styles'
 
-import LastCharts from '../../components/lastCharts'
+import BarChartOfLastWeek from '../../components/BarChartOfLastWeek'
 
 const Main:React.FC = () => {
     return(
@@ -19,7 +19,7 @@ const Main:React.FC = () => {
 
             <Title>Quantidade de vagas nessa semana</Title>
 
-            <LastCharts />            
+            <BarChartOfLastWeek />            
             </Content>
         </Container>
     )

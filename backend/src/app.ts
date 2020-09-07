@@ -1,5 +1,5 @@
 import express from 'express'
-
+import cors from 'cors'
 
 class Route{
     public app: express.Application
@@ -16,6 +16,7 @@ class Route{
     private config(){
         this.app.use(express.urlencoded({extended: true}))
         this.app.use(express.json())
+        this.app.use(cors())
     }
 
     private routes(rout: express.Router){

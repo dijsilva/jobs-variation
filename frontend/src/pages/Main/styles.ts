@@ -10,6 +10,9 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     max-width: 60%;
+    @media (max-width: 600px){
+        max-width: 95%;
+    }
     padding-top: 40px;
     display: flex;
     align-items: center;
@@ -19,6 +22,7 @@ export const Content = styled.div`
 export const Title = styled.h1`
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
 `
 
 export const ShortDescription = styled.p`
