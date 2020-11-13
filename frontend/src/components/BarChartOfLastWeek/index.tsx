@@ -17,16 +17,16 @@ const BarChartOfLastWeek:React.FC = () => {
         async function GetData(){
             const result = await api.get('/weeks/view/5edc1f66c4226ade2c30135a')
             const bsb = result.data.week.languages.filter((language:IULanguages) => {
-                return language.state == "BSB" && language.source_site == theme
+                return language.state === "BSB" && language.source_site === theme
             })
             const mg = result.data.week.languages.filter((language:IULanguages) => {
-                return language.state == "MG" && language.source_site == theme
+                return language.state === "MG" && language.source_site === theme
             })
             const sp = result.data.week.languages.filter((language:IULanguages) => {
-                return language.state == "SP" && language.source_site == theme
+                return language.state === "SP" && language.source_site === theme
             })
             const sc = result.data.week.languages.filter((language:IULanguages) => {
-                return language.state == "SC" && language.source_site == theme
+                return language.state === "SC" && language.source_site === theme
             })
 
             setLanguages_bsb(bsb)
@@ -36,7 +36,7 @@ const BarChartOfLastWeek:React.FC = () => {
         }
 
         GetData()
-    }, [])
+    }, [theme])
     return (
         <Container>
             <BarChartComp  data={languages_bsb} title={"Vagas em BSB"}/>

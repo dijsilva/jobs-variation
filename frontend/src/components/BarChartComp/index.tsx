@@ -1,5 +1,5 @@
 import React from 'react'
-import { BarChart, Bar, YAxis, XAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts'
+import { BarChart, Bar, YAxis, XAxis, CartesianGrid, Tooltip, ResponsiveContainer, Label } from 'recharts'
 
 import styled from 'styled-components'
 
@@ -24,7 +24,6 @@ const Container = styled.div`
         margin-bottom: 5px;
     }
 `
-
 
 const BarChartComp:React.FC<Data> = (props) => {
     return (
