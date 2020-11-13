@@ -90,12 +90,12 @@ function renderGraphics(){
         var myLineChart = new Chart(ctx_line[indexGraphic], {
             type: 'line',
             data: {
-                labels: ["22-05", "01-06", "03-06", "08-06", "12-06", "15-06", "19-06", "22-06","26-06", "29-07"],
+                labels: ["22-05", "01-06", "03-06", "08-06", "12-06", "15-06", "19-06", "22-06","26-06", "29-07", "13-11"],
                 datasets: [{
                     label: 'Python',
                     backgroundColor: "transparent",
                     borderColor: "#373737",
-                    labels: ["22-05", "01-06", "03-06", "08-06", "12-06", "15-06", "19-06", "22-06", "26-06", "29-07"],
+                    labels: ["22-05", "01-06", "03-06", "08-06", "12-06", "15-06", "19-06", "22-06", "26-06", "29-07", "13-11"],
                     data: variation[state].Python.jobs,
                 },
                 {
